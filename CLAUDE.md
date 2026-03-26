@@ -4,30 +4,20 @@
 
 ## 構成
 
-- Sinatra アプリ (`gyaki.rb`)
-- フロントエンド: CoffeeScript (`public/javascripts/draw.coffee`) → JS にコンパイル
-- テンプレート: ERB (`views/draw.erb`)
+- Next.js (Pages Router)
+- API Routes: `pages/api/upload.js`, `pages/api/gyazodata/[id].js`
+- 描画ロジック: `lib/draw.js` (vanilla JS, React不使用)
+- ルーティング: `pages/[...params].js` で `/:id` と `/:id/:imageId` を処理
 
 ## ローカル実行
 
 ```
-make run
+npm install
+npm run dev
 ```
 
-CoffeeScript のコンパイル後、`http://localhost:4567` で起動。
+`http://localhost:3000` で起動。
 
 ## デプロイ
 
-gyaki.org はさくらインターネットのサーバーで稼働。自動デプロイは無い。
-
-1. `make push` (GitHub にpush)
-2. Gyaki.org(さくらのサーバー)にSSH
-3. `cd /home/masui/Gyaki && git pull`
-4. `gyaki.rb` を変更した場合: `sudo systemctl restart gyaki`
-5. JS/静的ファイルのみの変更なら再起動不要（ブラウザキャッシュに注意）
-
-### サーバー構成
-
-- nginx (`/etc/nginx/conf.d/gyaki.conf`) → localhost:3001 にリバースプロキシ
-- systemd サービス (`/usr/lib/systemd/system/gyaki.service`)
-- アプリ配置先: `/home/masui/Gyaki/`
+Vercel にデプロイ。GitHub リポジトリと連携すれば push で自動デプロイ。
