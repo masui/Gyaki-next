@@ -102,9 +102,10 @@ export default function Home() {
 
         <footer>
 	  &copy; 2013-2026 Toshiyuki Masui
-          <a href="mailto:masui@pitecan.com">masui@pitecan.com</a>
+	  &nbsp;
+          (<a href="mailto:masui@pitecan.com">masui@pitecan.com</a>
           {' / '}
-          <a href="https://twitter.com/masui">@masui</a>
+          <a href="https://twitter.com/masui">@masui</a>)
         </footer>
       </div>
     </>
