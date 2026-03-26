@@ -88,7 +88,7 @@ export default function Home() {
               <li><i>GyazoID</i>はGyazoユーザを識別する16進数文字列です</li>
               <ul>
                 <li>Macでは ~/Library/Gyazo/id に書いてあります</li>
-                <li>Windowsでは C:\Users\ (YOUR COMPUTER&apos;S USER NAME) \AppData\Roaming\Gyazo\id.txt にあります</li>
+                <li>Windowsでは C:\Users\ (ユーザ名) \AppData\Roaming\Gyazo\id.txt にあります</li>
               </ul>
               <li>描いた絵やキャプチャした画像のリストを
                 <a href="https://gyazo.com/history">https://gyazo.com/history</a>
