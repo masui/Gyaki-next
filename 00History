@@ -1,0 +1,19 @@
+古い版2018ぐらい?
+
+* さくらのサーバ上で動かしてた
+  a @ 133.242.135.184 をvalue-domainに定義
+*  ~/Gyaki
+*  nginx サーバ、リバースプロキシ
+* RubyでSinatra
+* Coffeescript
+* お絵描きはdraw.js
+
+新しい版 (2026/3/26)
+
+* Claudeに書き直してもらった
+* Vercel + Next + 素JS
+* HTTPS対応になった
+* お絵描きのJSは変えてない
+* VercelのDNS
+  a @ 216.150.1.1 をvalue-domainに定義
+
