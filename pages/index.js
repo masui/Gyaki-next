@@ -95,7 +95,7 @@ export default function Home() {
                 で見ることができます。</li>
             </ul>
           </li>
-          <li>ソースは<a href="https://github.com/masui/Gyaki">GitHub</a>に置いてあります。</li>
+          <li>ソースは<a href="https://github.com/masui/Gyaki-next">GitHub</a>に置いてあります。</li>
         </ul>
 
         <a href="/01234567890123456789" className="try-button">楽ギャキを試してみる</a>
