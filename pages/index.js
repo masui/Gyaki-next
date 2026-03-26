@@ -101,7 +101,7 @@ export default function Home() {
         <a href="/01234567890123456789" className="try-button">楽ギャキを試してみる</a>
 
         <footer>
-	  &copy; 2013-2026 Toshiyuki Masui
+	  © 2013-2026 Toshiyuki Masui
 	  &nbsp;
           (<a href="mailto:masui@pitecan.com">masui@pitecan.com</a>
           {' / '}
